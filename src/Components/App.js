@@ -1,29 +1,21 @@
-import Top from './Top'
-import List from './List'
-import Button from './Button'
+import NavBar from './NavBar';
+import Corpo from './Corpo';
 
 export default function App(){
-    const title = prompt('Qual o título geral?')
-    const titleList = prompt('Qual o título geral?')
-    let itemList = ['item1', 'item2', 'item3']
 
-
-    while(true){
-
-        let item = prompt('Quais os itens da lista?')
-        itemList.push(item)
-
-        if(prompt('Você quer inserir mais um item?') === 'não'){
-           break;
-        }
-    } 
-
-    
     return (
         <div>
-            <Top title={title} />
-            <List title={titleList} itemList={itemList} />
-            <Button />
+           <NavBar/>
+           <Corpo/>
+
+           <div class="fundo-mobile">
+                <ion-icon name="home"></ion-icon>
+                <ion-icon name="search-outline"></ion-icon>
+                <ion-icon name="add-circle-outline"></ion-icon>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon>
+            </div>  
+
         </div>
     );
 }

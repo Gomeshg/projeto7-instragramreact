@@ -168,6 +168,7 @@ body {
 .post .topo .usuario, .post .topo .acoes {
   display: flex;
   align-items: center;
+  
 }
 
 .post .topo img {
@@ -189,10 +190,24 @@ body {
   justify-content: space-between;
   padding: 13px 16px;
   font-size: 24px;
+  /* background-color: red; */
 }
 
 .post .fundo .acoes div:first-child ion-icon {
   margin-right: 6px;
+  /* background-color: red; */
+}
+
+.post .fundo .acoes div:first-child ion-icon[name="heart-outline"]{
+  /* background-color: red; */
+}
+
+.like{
+  background-color: red;
+}
+
+.deslike{
+  background-color: white;
 }
 
 .post .fundo .curtidas {
@@ -391,3 +406,5 @@ body {
     top: 4px;
   }
 }
+
+
