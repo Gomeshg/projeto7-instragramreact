@@ -9,6 +9,8 @@ export default function Button(){
         setValor(valor + 1)
     }
 
+    
+
     return (
         <div>
             <button onClick={clique}>{valor}</button>
