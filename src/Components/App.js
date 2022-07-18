@@ -7,7 +7,7 @@ export default function App(){
     return (
         <div>
            <NavBar/>
-           <Corpo/>
+           <Corpo user_imagem="assets/img/catanacomics.svg" user_name="catanacomics" user_subname="Catana"/>
            <FundoMobile/>
         </div>
     );

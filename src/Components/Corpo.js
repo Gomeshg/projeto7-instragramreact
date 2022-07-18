@@ -3,7 +3,7 @@ import Posts from './Posts';
 import User from './User';
 import Sugestões from './Sugestões';
 
-export default function Corpo(){
+export default function Corpo(props){
 
     return (
         <div class="corpo">
@@ -17,7 +17,7 @@ export default function Corpo(){
 
             <div class="sidebar">
 
-                <User imagem="assets/img/catanacomics.svg" nome="catanacomics" subnome="Catana" />
+                <User imagem={props.user_imagem} nome={props.user_name} subnome={props.user_subname} />
                 <Sugestões/>
 
                 <div class="links">
