@@ -198,16 +198,18 @@ body {
   /* background-color: red; */
 }
 
-.post .fundo .acoes div:first-child ion-icon[name="heart-outline"]{
-  /* background-color: red; */
+.post .fundo .acoes div:first-child ion-icon[name="heart"]{
+  /* color: red; */
 }
+
 
 .like{
-  background-color: red;
+  color:red;
 }
 
+
 .deslike{
-  background-color: white;
+  color:black;
 }
 
 .post .fundo .curtidas {

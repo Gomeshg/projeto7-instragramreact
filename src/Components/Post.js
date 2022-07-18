@@ -5,16 +5,25 @@ import Icon from './Icon';
 
 export default function Post(props){
 
-    const [value, changeValue] = React.useState('deslike')
+    const [class_value, changeClassValue] = React.useState('deslike md hydrated')
+    const [icon_value, changeIconValue ] = React.useState('heart-outline')
 
 
-    function clique(){
-        alert(value)
-        if(value === 'deslike'){
-            changeValue('like')
+    function click_in_post(){
+        if(class_value === 'deslike md hydrated'){
+            changeClassValue('like md hydrated')
+            changeIconValue('heart')
+        }
+    }
+
+    function click_in_heart(){
+        if(class_value === 'deslike md hydrated'){
+            changeClassValue('like md hydrated')
+            changeIconValue('heart')
         }
         else{
-            changeValue('deslike')
+            changeClassValue('deslike md hydrated')
+            changeIconValue('heart-outline')
         }
     }
    
@@ -29,7 +38,7 @@ export default function Post(props){
                 <Icon classe="acoes" nome="ellipsis-horizontal"/>
             </div>
 
-            <div class="conteudo" onClick={clique}>
+            <div class="conteudo" onClick={click_in_post}>
                 <img src={props.imagemMain} />
             </div>
 
@@ -37,7 +46,7 @@ export default function Post(props){
                 
                 <div class="acoes">
                     <div >
-                        <ion-icon onClick={clique} name="heart-outline" class={value} ></ion-icon>
+                        <ion-icon onClick={click_in_heart} name={icon_value} class={class_value} ></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </div>

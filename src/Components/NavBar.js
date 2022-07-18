@@ -13,9 +13,7 @@ export default function NavBar(){
                 </div>
 
                 <Icon classe="logo-mobile" nome="logo-instagram" />
-                {/* <div class="logo-mobile">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </div> */}
+               
 
                 <div class="instagram-mobile">
                     <img src="assets/img/logo.png" />
@@ -34,9 +32,7 @@ export default function NavBar(){
                 </div>
 
                 <Icon classe="icones-mobile" nome="paper-plane-outline"/>
-                {/* <div class="icones-mobile">
-                    <ion-icon name="paper-plane-outline"></ion-icon>
-                </div> */}
+                
             </div>
         </div>
     );
